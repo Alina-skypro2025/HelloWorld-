@@ -7,7 +7,7 @@
   height: 890px;
   background-color: rgb(225, 255, 143);
   background-image: url(img/star1.jpg), url(img/star2.jpg), url(img/starbid.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 156% -240px;
+  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 156% -230px;
   background-repeat: no-repeat;
 }
 .top__content {
@@ -108,6 +108,11 @@
   padding: 32px 36px 32px 32px;
 }
 .for__title-number {
+  border-radius: 52px;
+  background: rgb(247, 247, 247);
+  width: 107px;
+  height: 36px;
+  border: none;
   color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
