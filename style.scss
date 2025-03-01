@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    box-sizing: border-box;
 }
+.top__title-mob{
+    display: none;
+}
+.top__subtitle-mob{
+    display: none;
+}
+
 
 .top {
     position: relative;
@@ -58,11 +66,14 @@
 }
 .star-big{
 position: absolute;
-width: 1074px;
-height: 1130.46px;
+width: 749px;
+top: -80px;
+height: 791px;
 left: 1200px;
-top: -340px;
-transform: rotate(5.45deg);
+
+}
+.star-mob{
+    display: none;
 }
 
 .center {
@@ -75,6 +86,8 @@ transform: rotate(5.45deg);
     background-image: url(img/Starfor.svg), url(img/starformini.jpg);
     background-position: 1340px 100px, 110px 900px;
     background-repeat: no-repeat;
+
+    
 }
 
 .games-link{
@@ -93,6 +106,9 @@ transform: rotate(5.45deg);
         padding-bottom: 24px;
 
 }
+&__title-mob{
+    display: none;
+}
 
 &__info {
  
@@ -110,7 +126,7 @@ transform: rotate(5.45deg);
     flex-direction: column;
     flex-wrap: wrap;
     gap: 32px;
-    margin: 72px 0px;
+   
     
 }
 
@@ -165,14 +181,162 @@ transform: rotate(5.45deg);
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
-   
+
 }
+&__game-mob{
+    display: none;
+}
+
 }
 
 .for__card:hover{
     transform: scale(103%);
     transition-delay: 0.2s;
     transition: 0,3s;
+}
+
+
+@media (max-width: 425px) {
+    .center {
+        padding-left: 47px;;
+        padding-right: 57px;
+    }
+
+.top{
+    position: relative;
+    overflow: hidden;
+    height: 890px;
+    background-color: rgb(225, 255, 143);
+    background-image: url(img/star1.jpg), url(img/star2.jpg);
+    background-position: 4px 58px, calc(100% - 50px) calc(100% - 160px);
+    background-repeat: no-repeat;
+
+    &__content{
+    margin-top: 147px;
+   }
+&__title{
+display: none;
+}
+&__subtitle{
+    display: none;
+}
+
+&__title-mob{
+display: block;
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 49px;
+text-align: center;
+}
+
+ &__subtitle-mob{
+display: block;
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+ }
+
+&__btn{
+text-align: center;
+width: 296px;
+height: 55px;
+align-items: center;
+gap: 10;
+margin-top: 36px;
+
+}
+}
+.big-gap{
+    display: block;
+    margin-bottom: 24px;
+}
+
+.for{
+    &__title-mob{
+
+display: block;
+width: 250px;
+height: 49px;
+color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 48px;
+padding-bottom: 96px;
+ }
+
+    &__title{
+        display: none;
+    }
+
+&__info{
+    display: none;
+}
+&__card{
+background-color: rgb(255, 255, 255);
+border-radius: 30px;
+width: 343px;
+display: flex;
+flex-direction: column;
+justify-items: center;
+}
+&__wrapper {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+&__img{
+    border-radius: 30px;
+}
+
+&__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    padding: 32px 36px 32px 32px;
+}
+&__title-number{
+    display: none;
+}
+&__game-mob{
+    display: block;
+    color: rgb(0, 0, 0);
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+}
+&__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+}
+
+ .star-big{
+ display: none;
+    }
+ .star-mob{
+ display: block;
+ width: 178px;
+ position: absolute;
+left: 250px;
+    }
+ 
+
+
+ 
 }
 
 
