@@ -24,9 +24,9 @@
         &__content{
         display: flex;
         flex-direction: column;
-        row-gap: 24px;
         justify-content: start;
         align-items: start;
+        row-gap: 24px;
         }
        &__title{
         color: rgb(32, 32, 39);
@@ -193,24 +193,124 @@ left: 1200px;
     transition: 0,3s;
 }
 
+.card{
+    background: rgb(32, 32, 39);
+   
+
+    &__title{
+        font-size: 64px;
+font-weight: 700;
+line-height: 78px;
+color: rgb(255, 255, 255);
+width: 400px;
+height: 78px;
+    }
+    &__for{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+border-radius: 30px;
+box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+background: rgb(255, 255, 255);
+width: 1200px;
+height: 500px;
+        
+    }
+    &__img{
+     border-radius: 30px;
+     height: 500px;
+    }
+    &__game{
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        
+
+    }
+    &__content{
+        padding: 48px;
+        display: grid;
+    align-content: center;
+    grid-gap: 24px;
+    }
+    &__text{
+        width: 457px;
+height: 64px;
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+    }
+    &__block{
+        display: grid;
+    align-content: center;
+    grid-gap: 32px;
+    }
+    &__btn{
+        width: 247px;
+height: 66px;
+        border-radius: 60px;
+background: rgb(32, 32, 39);
+padding: 16px 28px 16px 28px;
+color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 141.69%;
+    }
+    &__box{
+        display: grid;
+    align-content: center;
+    grid-gap: 32px;
+    }
+
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+
+
+
+
+
 
 @media (max-width: 425px) {
     .center {
-        padding-left: 47px;;
-        padding-right: 57px;
+        padding-left: 16px;;
+        padding-right: 16px;
+    }
+    .card{
+        display: none;
     }
 
 .top{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
     overflow: hidden;
-    height: 890px;
     background-color: rgb(225, 255, 143);
     background-image: url(img/star1.jpg), url(img/star2.jpg);
-    background-position: 4px 58px, calc(100% - 50px) calc(100% - 160px);
+    background-position: 4px 58px, calc(100% - 50px) calc(100% - 16px);
     background-repeat: no-repeat;
+   
 
     &__content{
-    margin-top: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+
    }
 &__title{
 display: none;
@@ -227,7 +327,8 @@ font-size: 40px;
 font-weight: 700;
 line-height: 49px;
 text-align: center;
-gap: 24;
+
+
 }
 
  &__subtitle-mob{
@@ -238,24 +339,28 @@ font-size: 16px;
 font-weight: 400;
 line-height: 20px;
 text-align: center;
+width: 296px;
+
+
+
  }
 
 &__btn{
 text-align: center;
 width: 296px;
 height: 55px;
-align-items: center;
 gap: 10;
-margin-top: 36px;
+margin-top: 12px;
 font-size: 16px;
 font-weight: 600;
 line-height: 141.69%;
+
+
 
 }
 }
 .big-gap{
     display: block;
-    margin-bottom: 24px;
 }
 
 .for{
@@ -270,6 +375,7 @@ line-height: 141.69%;
  width: 178px;
  position: absolute;
 left: 250px;
+top: -2px;
     }
  
 
