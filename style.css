@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Montserrat;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .top__title-mob {
@@ -87,6 +88,7 @@
 
 .games-link {
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .for__title {
@@ -99,6 +101,7 @@
   padding-top: 94px;
   padding-bottom: 24px;
 }
+
 .for__info {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -107,17 +110,21 @@
   letter-spacing: 0px;
   text-align: left;
   width: 788px;
+  padding-bottom: 72px;
 }
+
 .for__box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 32px;
 }
+
 .for__wrapper {
   display: flex;
   gap: 32px;
 }
+
 .for__card {
   background-color: rgb(255, 255, 255);
   width: 378px;
@@ -125,15 +132,18 @@
   z-index: 2;
   transition: transform 0.3s ease;
 }
+
 .for__img {
   border-radius: 30px;
 }
+
 .for__content {
   display: flex;
   flex-direction: column;
   row-gap: 26px;
   padding: 32px 36px 32px 32px;
 }
+
 .for__title-number {
   border-radius: 52px;
   background: rgb(247, 247, 247);
@@ -145,9 +155,8 @@
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0px;
-  text-align: left;
-  padding: 8px 16px 10px 16px;
 }
+
 .for__game {
   color: rgb(32, 32, 39);
   font-size: 32px;
@@ -162,6 +171,7 @@
   font-weight: 700;
   line-height: 39px;
 }
+
 .for__game-mob {
   display: none;
 }
@@ -174,7 +184,10 @@
 
 .card {
   background: rgb(32, 32, 39);
+  padding-bottom: 144px;
+  padding-top: 72px;
 }
+
 .card__title {
   font-size: 64px;
   font-weight: 700;
@@ -183,6 +196,7 @@
   width: 400px;
   height: 78px;
 }
+
 .card__for {
   display: flex;
   flex-direction: row;
@@ -194,24 +208,28 @@
   width: 1200px;
   height: 500px;
 }
+
 .card__img {
   border-radius: 30px;
   height: 500px;
 }
+
 .card__game {
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
 }
+
 .card__content {
   padding: 48px;
   display: grid;
   align-content: center;
   grid-gap: 24px;
 }
+
 .card__text {
-  width: 457px;
+  width: 500px;
   height: 64px;
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -219,11 +237,14 @@
   font-weight: 400;
   line-height: 32px;
 }
+
 .card__block {
   display: grid;
   align-content: center;
   grid-gap: 32px;
+  padding-top: 72px;
 }
+
 .card__btn {
   width: 247px;
   height: 66px;
@@ -236,14 +257,42 @@
   font-weight: 600;
   line-height: 141.69%;
 }
+
 .card__box {
   display: grid;
   align-content: center;
   grid-gap: 32px;
 }
 
+.card__box:nth-child(odd) {
+  flex-direction: row;
+}
+
+.card__box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .card-link {
   text-decoration: none;
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+  display: flex;
+  justify-content: space-around;
+}
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  gap: 60px;
 }
 
 @media (max-width: 425px) {
