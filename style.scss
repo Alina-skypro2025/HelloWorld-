@@ -68,6 +68,15 @@
     }
 }
 
+.scrolling {
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+
+
+}
+
 .star-big {
     position: absolute;
     width: 749px;
@@ -318,7 +327,6 @@
         height: 700px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
         position: relative;
@@ -334,7 +342,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 343px;
     }
 
     .top__title {
@@ -353,6 +361,7 @@
         font-weight: 700;
         line-height: 49px;
         text-align: center;
+        margin-top: 147px;
     }
 
     .top__subtitle-mob {
@@ -406,6 +415,7 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+        padding-bottom: 48px;
 
         &__title {
             display: flex;
@@ -413,6 +423,11 @@
             font-weight: 700;
             line-height: 49px;
             text-align: center;
+            padding-left: 16px;
+        }
+
+        &__box {
+            grid-gap: 24px;
         }
 
         &__img {
@@ -448,7 +463,7 @@
             font-size: 16px;
             font-weight: 600;
             line-height: 141.69%;
-            margin: 16px 0px;
+            margin-top: 16px;
         }
 
         &__game {
@@ -485,6 +500,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+            padding-top: 30px;
         }
     }
 
@@ -493,9 +509,16 @@
         font-weight: 600;
         line-height: 20px;
     }
+
     .footer {
         width: 100%;
         height: 100px;
+    }
+
+    .scrolling {
+        height: 51.34px;
+        width: auto;
+        display: block;
     }
 
 }
