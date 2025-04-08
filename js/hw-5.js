@@ -43,8 +43,8 @@ console.log(arr5);
 //Задание 6
 
 let arr6 = [9, 8, 7, 'a', 6, 5];
-arr6 = arr6.sort().filter(item => typeof item === 'number');
-console.log(arr6);
+arr6 = arr6.filter(item => typeof item === 'number').sort((a, b) => a - b);
+console.log(arr6); // [5, 6, 7, 8, 9]
 
 //Задание 7
 
@@ -65,8 +65,8 @@ console.log(reversed);
 //Задание 9
 
 const arr9 = [[1, 2, 3], [4, 5, 6]];
-const flatArr = [...arr9[0], ...arr9[1]];
-console.log(flatArr);
+const flatArr = arr9.flat();
+console.log(flatArr); // [1, 2, 3, 4, 5, 6]
 
 //Задание 10
 

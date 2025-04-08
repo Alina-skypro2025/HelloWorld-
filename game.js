@@ -1,13 +1,30 @@
+
 const secretNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
+let gameEnded = false;
+
+document.getElementById('submitBtn').addEventListener('click', checkGuess);
 
 function checkGuess() {
-  const userGuess = parseInt(document.getElementById("guessInput").value, 10);
-  const message = document.getElementById("message");
+  if (gameEnded) return;
+  
+  const guessInput = document.getElementById('guessInput');
+  const message = document.getElementById('message');
+  const userInput = guessInput.value.trim();
+
+  if (userInput === "") {
+    message.textContent = "Вы отменили игру.";
+    document.getElementById("submitBtn").disabled = true;
+    guessInput.disabled = true;
+    gameEnded = true;
+    return;
+  }
+
+  const userGuess = parseInt(userInput, 10);
   attempts++;
 
   if (isNaN(userGuess)) {
-    message.textContent = "Пожалуйста, введите число.";
+    message.textContent = "Пожалуйста, введите корректное число.";
     return;
   }
 
@@ -16,9 +33,11 @@ function checkGuess() {
   } else if (userGuess > secretNumber) {
     message.textContent = "Загаданное число меньше.";
   } else {
-    message.textContent = `Поздравляю! Ты угадал число ${secretNumber} за ${attempts} попыток.`;
-    document.querySelector("button").disabled = true;
+    message.textContent = `Поздравляю! Ты угадал число ${secretNumber} за ${attempts} попыток!`;
+    document.getElementById("submitBtn").disabled = true;
+    guessInput.disabled = true;
+    gameEnded = true;
   }
 
-  document.getElementById("guessInput").value = "";
+  guessInput.value = "";
 }
