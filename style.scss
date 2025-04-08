@@ -19,7 +19,7 @@
 .top {
     position: relative;
     overflow: hidden;
-    height: 890px;
+    height: 800px;
     background-color: rgb(225, 255, 143);
     background-image: url(img/star1.jpg), url(img/star2.jpg);
     background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px);
@@ -69,12 +69,25 @@
 }
 
 .scrolling {
-    height: auto;
+    height: 90px;
     width: 100%;
     display: block;
     object-fit: cover;
+    box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.2);
+background: rgb(188, 236, 48);
+padding: 27px 49px 27px 49px;
 
 
+
+&__item{
+    color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 700;
+line-height: 110%;
+margin: 0px 50px;
+}
 }
 
 .star-big {
@@ -423,7 +436,7 @@
             font-weight: 700;
             line-height: 49px;
             text-align: center;
-            padding-left: 16px;
+            padding-left: 30px;
         }
 
         &__box {
@@ -500,7 +513,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            padding-top: 30px;
+            padding-top: 32px;
         }
     }
 
@@ -518,7 +531,15 @@
     .scrolling {
         height: 51.34px;
         width: auto;
-        display: block;
+        display: flex;
+        align-items: center;
+
+        &__item{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+            margin: 0px 21px;
+        }
     }
 
 }
