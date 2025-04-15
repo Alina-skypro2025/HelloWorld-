@@ -65,13 +65,13 @@
 .scrolling {
   height: 90px;
   width: 100%;
-  display: block;
+  display: flex;
   -o-object-fit: cover;
      object-fit: cover;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgb(188, 236, 48);
-  padding: 27px 49px 27px 49px;
+  overflow-x: hidden;
 }
 .scrolling__item {
   color: rgb(32, 32, 39);
@@ -80,6 +80,8 @@
   font-weight: 700;
   line-height: 110%;
   margin: 0px 50px;
+  display: flex;
+  align-items: center;
 }
 
 .star-big {
@@ -213,7 +215,6 @@
   font-weight: 700;
   line-height: 78px;
   color: rgb(255, 255, 255);
-  width: 400px;
   height: 78px;
 }
 
@@ -395,7 +396,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -407,7 +407,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    text-align: center;
     padding-left: 30px;
   }
   .card__box {
@@ -486,11 +485,13 @@
     width: auto;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
   }
   .scrolling__item {
     font-size: 16px;
     font-weight: 700;
     line-height: 110%;
     margin: 0px 21px;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=style.css.map */
