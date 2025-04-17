@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="title">ЗАГОЛОВОК</h1>
+<button id="toggleBtn">Скрыть</button>
+
+<script>
+const title = document.querySelector('#title');
+const btn = document.querySelector('#toggleBtn');
+
+btn.addEventListener('click', () => {
+    if (title.style.display === 'none') {
+        title.style.display = 'block';
+        btn.textContent = 'Скрыть';
+    } else {
+        title.style.display = 'none';
+        btn.textContent = 'Показать';
+    }
+});
+</script>
+
+
+
+<p id="paragraph">ТЕКСТ</p>
+<button id="colorBtn">Изменить цвет</button>
+
+<script>
+document.querySelector('#colorBtn').addEventListener('click', () => {
+    document.querySelector('#paragraph').style.color = 'blue';
+});
+</script>
+
+
+
+<h1 id="changeTitle">ЗАГОЛОВОК</h1>
+<button id="changeTextBtn">Изменить текст</button>
+
+<script>
+document.querySelector('#changeTextBtn').addEventListener('click', () => {
+    document.querySelector('#changeTitle').textContent = 'Привет, мир!';
+});
+</script>
+
+
+
+<p class="description">Один</p>
+<p class="description">Два</p>
+<p class="description">Три</p>
+
+<script>
+const descriptions = document.querySelectorAll('.description');
+descriptions.forEach(el => {
+    el.textContent = 'Измененный текст';
+});
+</script>
+
+
+
+<p class="description">ЭЛЕМЕНТ 1</p>
+<p class="info">Информация</p>
+<p class="description">ЭЛЕМЕНТ 2</p>
+
+<script>
+document.querySelectorAll('.description').forEach(p => {
+    p.textContent = 'Новый текст';
+});
+</script>
+
+
+
+
+<button id="addBtn">элемент</button>
+
+<script>
+document.querySelector('#addBtn').addEventListener('click', () => {
+    const newP = document.createElement('p');
+    newP.textContent = 'Новый абзац';
+    document.body.appendChild(newP);
+});
+</script>
+
+
+
+<p class="description">Удалить меня 1</p>
+<p class="description">Удалить меня 2</p>
+<button id="deleteBtn">Удалить элемент</button>
+
+<script>
+document.querySelector('#deleteBtn').addEventListener('click', () => {
+    const first = document.querySelector('.description');
+    if (first) first.remove();
+});
+</script>
+
+
+</body>
+</html>
