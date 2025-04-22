@@ -65,31 +65,50 @@
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+
+        &:hover {
+            background: rgb(255, 255, 255);
+            color: rgb(32, 32, 39);
+            border: 2px solid rgb(32, 32, 39);
+        }
     }
 }
 
-.scrolling {
-    height: 90px;
+
+
+.scrolling-wrapper {
+    overflow: hidden;
     width: 100%;
-    display: flex;
-    object-fit: cover;
-    box-sizing: border-box;
-border: 1px solid rgba(255, 255, 255, 0.2);
-background: rgb(188, 236, 48);
-overflow-x: hidden;
-
-
-
-&__item{
-    color: rgb(32, 32, 39);
-font-family: Montserrat;
-font-size: 30px;
-font-weight: 700;
-line-height: 110%;
-margin: 0px 50px;
-display: flex;
-align-items: center;
+    background: rgb(188, 236, 48);
 }
+
+.scrolling {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    align-items: center;
+    height: 90px;
+}
+
+.scrolling__item {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .star-big {
@@ -226,7 +245,7 @@ align-items: center;
     font-weight: 700;
     line-height: 78px;
     color: rgb(255, 255, 255);
-   
+
     height: 78px;
 }
 
@@ -288,6 +307,12 @@ align-items: center;
     font-size: 24px;
     font-weight: 600;
     line-height: 141.69%;
+
+    &:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
+        border: 2px solid rgb(32, 32, 39);
+    }
 }
 
 .card__box {
@@ -425,7 +450,7 @@ align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -437,7 +462,7 @@ align-items: center;
             font-size: 40px;
             font-weight: 700;
             line-height: 49px;
-            
+
             padding-left: 30px;
         }
 
@@ -537,7 +562,7 @@ align-items: center;
         align-items: center;
         flex-shrink: 0;
 
-        &__item{
+        &__item {
             font-size: 16px;
             font-weight: 700;
             line-height: 110%;
