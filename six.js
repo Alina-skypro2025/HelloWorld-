@@ -1,5 +1,5 @@
-document.getElementById('colorButton').addEventListener('click', function() {
-    
+document.getElementById('colorButton').addEventListener('click', function () {
+
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
