@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styless.css">
 </head>
 
 <body>
-    <div class="top center">
+    <div class="top-korz center">
         <header class="header">
-            <a class="header__logo" href="index.html"><img class="header__logo" src="logo-1.svg" alt="лого"></a>
+            <a class="header__logo" href="korzina.html"><img class="header__logo" src="logo-1.svg" alt="лого"></a>
             <input placeholder="Поиск" class="header__input" type="text">
             <nav>
                 <ul class="meny">
-                    <li><a class="meny__link" href=" catalog.html">Каталог</a></li>
+                    <li><a class="meny__link" href="catalog.html">Каталог</a></li>
                     <li><a class="meny__link" href="korzina.html">Корзина</a></li>
                 </ul>
             </nav>
@@ -84,35 +84,88 @@
             </div>
         </header>
         <div>
-            <h1 class="title">Все, чего<br>заслуживает ваш дом</h1>
-            <p class="top__text">Наша мебель — ваше отражение</p>
-            <a class="link" href="catalog.html">Перейти в каталог</a>
+            <h1 class="heading">Корзина</h1>
         </div>
     </div>
 
-    <section class="for-box center">
-        <h2 class="for-box__title"> Мебель для ...</h2>
-        <div class="for">
-            <div class="for__item for__item_1 for__item_big">ОТДЫХА</div>
-            <div class="for__item for__item_2 for__item_big">РАБОТЫ</div>
-            <div class="for__item for__item_3">КУХНИ</div>
-            <div class="for__item for__item_4">ДЕТСКОЙ</div>
-            <div class="for__item for__item_5">ВАННОЙ</div>
+    <section class="cart center">
+        <div class="cart__content">
+            <div class="cart__name-box">
+                <p>Товар</p>
+                <p>К-во</p>
+            </div>
+            <div class="cart__item">
+                <div class="cart__left">
+                    <img class="cart__img" src="korzina/img1.jpeg" alt="img1">
+                    <div class="cart__info">
+                        <h2 class="cart__title">Стол MENU</h2>
+                        <p class="cart__text">Для того чтобы трапезничать было приятно, необходим правильный обеденный
+                            стол.</p>
+                        <div class="cart__price">
+                            <p>34 000 руб.</p>
+                        </div>
+                        <div class="cart__link-box">
+                            <a class="cart__link" href="#">Избранные</a>
+                            <a class="cart__link" href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input class="cart__number" type="number" value="1" min="1">
+            </div>
+            <div class="cart__item">
+                <div class="cart__left">
+                    <img class="cart__img" src="korzina/img2.jpeg" alt="img2">
+                    <div class="cart__info">
+                        <h2 class="cart__title">Диван NASTAN</h2>
+                        <p class="cart__text">Модель отличается простотой линий и форм, отсутствием броского декора.
+                        </p>
+                        <div class="cart__price">
+                            <p>80 000 руб.</p>
+                        </div>
+                        <div class="cart__link-box">
+                            <a class="cart__link" href="#">Избранные</a>
+                            <a class="cart__link" href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input class="cart__number" type="number" value="1" min="1">
+            </div>
+            <div class="cart-box">
+                <button class="cart__button-block">Очистить корзину</button>
+                <form action="catalog.html"><button class="cart__button-block cart__button-black">Продолжить
+                        покупки</button></form>
+            </div>
         </div>
+
+        <div class="cart__form">
+            <div class="cart__right">
+                <h3 class="cart__form-box">Оформление заказа</h3>
+                <div class="cart__input">
+                    <input class="cart__input-text" type="text" placeholder="Имя Фамилия">
+                    <input class="cart__input-text" type="tel" placeholder="+ 7 904 000 80 80">
+                    <input class="cart__input-text" type="text" placeholder="Адрес доставки">
+                </div>
+                <div class="cart__form-price">
+                    <span class="cart__form-itog">Итого: 128 000 руб.</span>
+                </div>
+                <div class="cart__form-button">
+                    <button class="cart__button">Оформить заказ</button>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 
-
     <section class="product-box center">
-        <h2 class="product-box__title"> Специальные предложения </h2>
+        <p class="product-box__title"> Специальные предложения </p>
         <div class="product-content">
             <article class="product">
-                <div>
-                    <img class="product__img" src="lustra.jpeg" alt="Люстра">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
+                <img class="product__img" src="lustra.jpeg" alt="Люстра">
+                <div class="icons">
+                    <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
+                    <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
                 </div>
                 <h3 class="product__title">Люстра VODA</h3>
                 <p class="product__text">Основание из полированной нержавеющей стали, придает оригинальный парящий
@@ -154,102 +207,20 @@
 
     </section>
 
-    <div>
-        <section class="catalog-box center">
-            <h2 class="catalog-box__title">Каталог товаров</h2>
-
-            <div class="catalog-content">
-                <article class="catalog">
-                    <img class="catalog__img" src="taran.jpeg" alt="таран">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h3 class="catalog__name">Кровать TATRAN</h3>
-                    <p class="catalog__text">Основание из полированной нержавеющей стали, придает оригинальный парящий
-                        эффект.</p>
-                    <p class="catalog__price">120 000 руб.</p>
-                </article>
-
-                <article class="catalog">
-                    <img class="catalog__img" src="product1.jpg" alt="Продукт">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h2 class="catalog__name">Кресло VILORA</h2>
-                    <p class="catalog__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная
-                        на
-                        ощупь
-                        ткань</p>
-                    <p class="catalog__price">21 000 руб</p>
-                </article>
-
-                <article class="catalog">
-                    <img class="catalog__img" src="menu.jpeg" alt="stol">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h3 class="catalog__name">Стол MENU</h3>
-                    <p class="catalog__text">Для того чтобы трапезничать было приятно, необходим правильный обеденный
-                        стол.
-                    </p>
-                    <p class="catalog__price">34 000 руб.</p>
-                </article>
-
-                <article class="catalog">
-                    <img class="catalog__img" src="askesta.jpeg" alt="kreslo">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h4 class="catalog__name">Кресло ASKESTA</h4>
-                    <p class="catalog__text">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговече</p>
-                    <p class="catalog__price">68 000 руб.</p>
-                </article>
-
-                <article class="catalog">
-                    <img class="catalog__img" src="norman.jpeg" alt="stol">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h5 class="catalog__name">Стол NORMAN</h5>
-                    <p class="catalog__text">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
-                    <p class="catalog__price">40 000 руб.</p>
-                </article>
-
-                <article class="catalog">
-                    <img class="catalog__img" src="nastan.jpeg" alt="divan">
-                    <div class="icons">
-                        <span class="icons__img"> <img src="iconka1.svg" alt="замок"></span>
-                        <span class="icons__img"><img src="iconka2.svg" alt="сердце"></span>
-                    </div>
-                    <h6 class="catalog__name">Диван NASTAN</h6>
-                    <p class="catalog__text">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
-                    <p class="catalog__price">80 000 руб.</p>
-                </article>
-            </div>
-
-
-
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a class="nav__katalog" href="catalog.html">Перейти в каталог</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </div>
+    <nav class="nav-box center">
+        <ul class="nav">
+            <li>
+                <a class="nav__katalog" href="catalog.html">Перейти в каталог</a>
+            </li>
+        </ul>
+    </nav>
 
 
     <footer class="footer center">
 
         <section class="footer-box">
             <div>
-                <img class="footer__logo" src="interer.svg" alt="logo">
+                <a class="footer__logo" href="index.html"><img src="interer.svg" alt="лого"></a>
             </div>
 
             <div class="footer__meny">
@@ -289,6 +260,5 @@
             </form>
         </section>
     </footer>
-</body>
-
+ </body>   
 </html>
